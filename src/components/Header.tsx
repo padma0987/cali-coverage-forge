@@ -61,9 +61,7 @@ export function Header() {
               className="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-gold"
             >
               Services
-              <ChevronDown
-                className={`h-3.5 w-3.5 transition-transform ${megaOpen ? "rotate-180" : ""}`}
-              />
+              <ChevronDown className={`h-3.5 w-3.5 transition-transform ${megaOpen ? "rotate-180" : ""}`} />
             </button>
             {megaOpen && (
               <div className="absolute left-1/2 top-[calc(100%+18px)] w-[620px] -translate-x-1/2 rounded-xl border border-border bg-plum p-7 shadow-[var(--shadow-elegant)] duration-200 animate-in fade-in slide-in-from-top-2">
@@ -108,7 +106,7 @@ export function Header() {
         <div className="ml-auto flex items-center gap-4 lg:ml-0">
           <a
             href={site.phoneHref}
-            className="hidden items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-gold md:flex"
+            className="hidden items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-gold md:flex color:#ffffff"
           >
             <Phone className="h-3.5 w-3.5" />
             {site.phone}
@@ -134,11 +132,7 @@ export function Header() {
       {mobileOpen && (
         <div className="border-t border-border bg-background px-5 pb-8 pt-2 lg:hidden">
           <nav aria-label="Mobile" className="flex flex-col gap-1">
-            <Link
-              to="/"
-              onClick={() => setMobileOpen(false)}
-              className="py-3 text-base text-foreground"
-            >
+            <Link to="/" onClick={() => setMobileOpen(false)} className="py-3 text-base text-foreground">
               Home
             </Link>
             <button
@@ -148,9 +142,7 @@ export function Header() {
               className="flex items-center justify-between py-3 text-base text-foreground"
             >
               Services
-              <ChevronDown
-                className={`h-4 w-4 transition-transform ${mobileServices ? "rotate-180" : ""}`}
-              />
+              <ChevronDown className={`h-4 w-4 transition-transform ${mobileServices ? "rotate-180" : ""}`} />
             </button>
             {mobileServices && (
               <div className="space-y-5 border-l border-border pb-2 pl-4">
@@ -175,21 +167,13 @@ export function Header() {
                 ))}
               </div>
             )}
-            <Link
-              to="/about"
-              onClick={() => setMobileOpen(false)}
-              className="py-3 text-base text-foreground"
-            >
+            <Link to="/about" onClick={() => setMobileOpen(false)} className="py-3 text-base text-foreground">
               About
             </Link>
-            <Link
-              to="/contact"
-              onClick={() => setMobileOpen(false)}
-              className="py-3 text-base text-foreground"
-            >
+            <Link to="/contact" onClick={() => setMobileOpen(false)} className="py-3 text-base text-foreground">
               Contact
             </Link>
-            <a href={site.phoneHref} className="py-3 text-base text-muted-foreground">
+            <a href={site.phoneHref} className="py-3 text-base text-muted-foreground color:#ffffff">
               {site.phone}
             </a>
             <Link
