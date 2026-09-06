@@ -98,6 +98,12 @@
     outline: 2px solid var(--color-gold);
     outline-offset: 2px;
   }
+  .servicebox {
+    border-color: #1c1527 !important;
+  }
+  .serviceicon {
+    color: #9b77f0 !important;
+  }
 }
 
 @utility eyebrow {
