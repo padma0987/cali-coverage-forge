@@ -8,13 +8,13 @@ export const Route = createFileRoute("/services/$slug")({
   loader: ({ params }) => {
     const service = serviceBySlug(params.slug);
     if (!service) throw notFound();
-    return { service };
+    return { slug: service.slug };
   },
-  head: ({ params, loaderData }) => {
-    if (!loaderData) {
+  head: ({ params }) => {
+    const service = serviceBySlug(params.slug);
+    if (!service) {
       return { meta: [{ title: "Service unavailable" }, { name: "robots", content: "noindex" }] };
     }
-    const { service } = loaderData;
     return {
       meta: [
         { title: service.metaTitle },
@@ -31,8 +31,11 @@ export const Route = createFileRoute("/services/$slug")({
 });
 
 function ServiceDetail() {
-  const { service } = Route.useLoaderData();
+  const { slug } = Route.useLoaderData();
+  const service = serviceBySlug(slug)!;
   const groupTabs = serviceMenu.find((g) => g.items.some((i) => i.slug === service.slug));
+
+
 
   return (
     <>
