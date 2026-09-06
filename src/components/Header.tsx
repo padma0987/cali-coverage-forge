@@ -10,6 +10,26 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileServices, setMobileServices] = useState(false);
   const megaRef = useRef<HTMLDivElement>(null);
+  const closeTimer = useRef<number | null>(null);
+
+  const clearCloseTimer = () => {
+    if (closeTimer.current !== null) {
+      window.clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  };
+  const openMega = () => {
+    clearCloseTimer();
+    setMegaOpen(true);
+  };
+  const scheduleCloseMega = () => {
+    clearCloseTimer();
+    closeTimer.current = window.setTimeout(() => setMegaOpen(false), 200);
+  };
+  const closeMega = () => {
+    clearCloseTimer();
+    setMegaOpen(false);
+  };
 
   useEffect(() => {
     function onDown(e: MouseEvent) {
@@ -28,6 +48,8 @@ export function Header() {
       document.removeEventListener("keydown", onKey);
     };
   }, []);
+
+  useEffect(() => clearCloseTimer, []);
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md">
