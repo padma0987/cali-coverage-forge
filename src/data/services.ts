@@ -1,5 +1,4 @@
 import {
-  HeartPulse,
   Stethoscope,
   ShieldCheck,
   PiggyBank,
@@ -10,13 +9,15 @@ import {
   UserRound,
   type LucideIcon,
 } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
+import { HealthInsuranceIcon } from "@/components/icons/HealthInsuranceIcon";
 import type { FaqItem } from "./faqs";
 
 export type Service = {
   slug: string;
   title: string;
   cardDescription: string;
-  icon: LucideIcon;
+  icon: LucideIcon | ComponentType<SVGProps<SVGSVGElement>>;
   metaTitle: string;
   metaDescription: string;
   problemHeading: string[];
@@ -50,7 +51,7 @@ export const services: Service[] = [
   {
     slug: "health-insurance",
     title: "Health Insurance",
-    icon: HeartPulse,
+    icon: HealthInsuranceIcon,
     featured: true,
     cardDescription:
       "Individual and family medical plans compared across California carriers, networks and subsidy eligibility.",
