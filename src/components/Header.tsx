@@ -106,8 +106,7 @@ export function Header() {
         <div className="ml-auto flex items-center gap-4 lg:ml-0">
           <a
             href={site.phoneHref}
-            className="hidden items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-gold md:flex"
-            style="color: #ffffff;"
+            className="hidden items-center gap-2 text-sm text-foreground transition-colors hover:text-gold md:flex"
           >
             <Phone className="h-3.5 w-3.5" />
             {site.phone}
@@ -174,7 +173,7 @@ export function Header() {
             <Link to="/contact" onClick={() => setMobileOpen(false)} className="py-3 text-base text-foreground">
               Contact
             </Link>
-            <a href={site.phoneHref} className="py-3 text-base text-muted-foreground" style="color: #ffffff;">
+            <a href={site.phoneHref} className="py-3 text-base text-foreground">
               {site.phone}
             </a>
             <Link
