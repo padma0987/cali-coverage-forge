@@ -73,12 +73,20 @@ export function Header() {
           >
             Home
           </Link>
-          <div ref={megaRef} className="relative" onMouseLeave={() => setMegaOpen(false)}>
+          <div
+            ref={megaRef}
+            className="relative"
+            onMouseEnter={openMega}
+            onMouseLeave={scheduleCloseMega}
+            onFocus={openMega}
+            onBlur={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget as Node)) scheduleCloseMega();
+            }}
+          >
             <button
               type="button"
               aria-expanded={megaOpen}
               aria-haspopup="true"
-              onMouseEnter={() => setMegaOpen(true)}
               onClick={() => setMegaOpen((v) => !v)}
               className="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-gold"
             >
@@ -86,27 +94,29 @@ export function Header() {
               <ChevronDown className={`h-3.5 w-3.5 transition-transform ${megaOpen ? "rotate-180" : ""}`} />
             </button>
             {megaOpen && (
-              <div className="absolute left-1/2 top-[calc(100%+18px)] w-[620px] -translate-x-1/2 rounded-xl border border-border bg-plum p-7 shadow-[var(--shadow-elegant)] duration-200 animate-in fade-in slide-in-from-top-2">
-                <div className="grid grid-cols-2 gap-x-10 gap-y-7">
-                  {serviceMenu.map((group) => (
-                    <div key={group.heading}>
-                      <p className="text-[13px] font-medium text-gold">{group.heading}</p>
-                      <ul className="mt-3 space-y-2">
-                        {group.items.map((item) => (
-                          <li key={group.heading + item.label}>
-                            <Link
-                              to="/services/$slug"
-                              params={{ slug: item.slug }}
-                              onClick={() => setMegaOpen(false)}
-                              className="text-[13px] text-muted-foreground transition-colors hover:text-foreground"
-                            >
-                              {item.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+              <div className="absolute left-1/2 top-full w-[620px] -translate-x-1/2 pt-[18px]">
+                <div className="rounded-xl border border-border bg-plum p-7 shadow-[var(--shadow-elegant)] duration-200 animate-in fade-in slide-in-from-top-2">
+                  <div className="grid grid-cols-2 gap-x-10 gap-y-7">
+                    {serviceMenu.map((group) => (
+                      <div key={group.heading}>
+                        <p className="text-[13px] font-medium text-gold">{group.heading}</p>
+                        <ul className="mt-3 space-y-2">
+                          {group.items.map((item) => (
+                            <li key={group.heading + item.label}>
+                              <Link
+                                to="/services/$slug"
+                                params={{ slug: item.slug }}
+                                onClick={closeMega}
+                                className="text-[13px] text-muted-foreground transition-colors hover:text-foreground"
+                              >
+                                {item.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
