@@ -87,7 +87,9 @@ export function Header() {
               type="button"
               aria-expanded={megaOpen}
               aria-haspopup="true"
-              onClick={() => setMegaOpen((v) => !v)}
+              onClick={() => {
+                if (!megaOpen) openMega();
+              }}
               className="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-gold"
             >
               Services
