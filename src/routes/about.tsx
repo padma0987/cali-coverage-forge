@@ -2,8 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CTASection } from "@/components/CTASection";
 import { TrustStrip } from "@/components/TrustStrip";
 import { FinalContact } from "@/components/FinalContact";
-import headshot from "@/assets/charlie-headshot.jpg";
+import headshotAsset from "@/assets/charlie-headshot.jpg.asset.json";
 import { approachCards, site } from "@/data/site";
+
+const headshot = headshotAsset.url;
 
 export const Route = createFileRoute("/about")({
   head: () => ({
