@@ -107,9 +107,7 @@ export function Header() {
           <a
             href={site.phoneHref}
             className="hidden items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-gold md:flex"
-            style="
-    color: #ffffff;
-"
+            style="color: #ffffff;"
           >
             <Phone className="h-3.5 w-3.5" />
             {site.phone}
@@ -176,13 +174,7 @@ export function Header() {
             <Link to="/contact" onClick={() => setMobileOpen(false)} className="py-3 text-base text-foreground">
               Contact
             </Link>
-            <a
-              href={site.phoneHref}
-              className="py-3 text-base text-muted-foreground"
-              style="
-    color: #ffffff;
-"
-            >
+            <a href={site.phoneHref} className="py-3 text-base text-muted-foreground" style="color: #ffffff;">
               {site.phone}
             </a>
             <Link
