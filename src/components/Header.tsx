@@ -1,9 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
-import headshot from "@/assets/charlie-headshot.jpg";
+import headshotAsset from "@/assets/charlie-headshot.jpg.asset.json";
 import { serviceMenu } from "@/data/services";
 import { site } from "@/data/site";
+
+const headshot = headshotAsset.url;
 
 export function Header() {
   const [megaOpen, setMegaOpen] = useState(false);
