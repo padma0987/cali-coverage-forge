@@ -1,5 +1,4 @@
 import {
-  HeartPulse,
   Stethoscope,
   ShieldCheck,
   PiggyBank,
