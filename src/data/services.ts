@@ -175,7 +175,7 @@ export const services: Service[] = [
       {
         question: "1. How much health insurance coverage do I need?",
         answer:
-          "It depends on your health, lifestyle, and budget. A good plan should cover essentials like doctor visits, hospital stays, prescriptions, and preventive care.",
+          "The amount of health insurance range purely depends on your health condition, lifestyle, age, income and budget. Choose a plan that covers essentials like doctor visits, hospital stays, prescriptions, and preventive care, surgeries and advance treatments that you may need.The amount of health insurance range purely depends on your health condition, lifestyle, age, income and budget. Choose a plan that covers essentials like doctor visits, hospital stays, prescriptions, and preventive care, surgeries and advance treatments that you may need.",
       },
       {
         question: "Where can I get health insurance?",
