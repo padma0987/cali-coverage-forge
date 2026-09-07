@@ -83,7 +83,6 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-size: 18px;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
