@@ -195,7 +195,7 @@ export const services: Service[] = [
       },
        {
         question: "Why should I get health insurance if I’m healthy?",
-        answer:"According to Affordable Care Act (ACA), insurance companies cannot refuse coverage or charge you higher premiums because of a pre-existing health condition.",,
+        answer:"aa",
       },
     ],
   },
