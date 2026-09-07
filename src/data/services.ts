@@ -175,8 +175,7 @@ export const services: Service[] = [
       {
         question: "1. How much health insurance coverage do I need?",
         answer:
-          "The amount of health insurance range clearly depends on your health condition, lifestyle, age, and budget. 
-          Choose a plan that covers essentials like doctor visits, hospital stays, prescriptions, preventive care, surgeries and advance treatments that you may need."
+          "ss"
       },
       {
         question: "Where can I get health insurance?",
