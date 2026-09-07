@@ -175,17 +175,18 @@ export const services: Service[] = [
       {
         question: "1. How much health insurance coverage do I need?",
         answer:
-          "ss",
+          "The amount of health insurance range clearly depends on your health condition, lifestyle, age, and budget. 
+          Choose a plan that covers essentials like doctor visits, hospital stays, prescriptions, preventive care, surgeries and advance treatments that you may need.",
       },
       {
         question: "Where can I get health insurance?",
         answer:
-          "You can get coverage through your employer, choose an individual plan, or explore options through the ACA Marketplace.",
+          "You can get coverage through your job if your employer offers an employee-sponsored health plan, choose an individual medical health insurance provider or check ACA Marketplace.",
       },
       {
         question: "What types of health insurance plans are available?",
         answer:
-          "Common options include HMO, PPO, POS, and EPO plans. Each offers a different balance of cost, flexibility, and provider choice.",
+          "Common options include Health Maintenance Organization (HMO), Preferred Provider Organization (PPO), Exclusive Provider Organization (EPO), and Point of Service (POS) plans. Each offers a different balance of cost, flexibility, and provider choice. Talk to us to know what fits you best.",
       },
       {
         question: "Can I get health insurance if I have a pre-existing condition?",
