@@ -191,12 +191,13 @@ export const services: Service[] = [
       {
         question: "Can I get health insurance if I have a pre-existing condition?",
         answer:
-          "Yes. Under the ACA, you generally can’t be denied coverage or charged more because of a pre-existing condition.",
+          "According to Affordable Care Act (ACA), insurance companies cannot refuse coverage or charge you higher premiums because of a pre-existing health condition.",
       },
        {
         question: "Why should I get health insurance if I’m healthy?",
         answer:
-          "Even if you feel healthy today, unexpected illnesses or accidents can be costly. Insurance gives you financial protection and can help cover preventive care.",
+          "Life is unpredictable, there is no assuarance if you are fit today unexpected illnesses or accidents can't happen to you, 
+          which might be costly in comparison to having an insurance plan. Insurance gives you financial protection and can help cover preventive care.",
       },
     ],
   },
