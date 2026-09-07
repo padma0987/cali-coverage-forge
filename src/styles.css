@@ -35,7 +35,7 @@
   --color-ring: var(--ring);
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-sans: "DM Sans", system-ui, sans-serif;
-
+--text-sm: 0.9375rem;
 }
 
 :root {
