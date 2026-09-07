@@ -173,24 +173,29 @@ export const services: Service[] = [
           "If you do, bring the current plan summary. We compare it against available options so any change is a measured upgrade rather than a guess.",
       },
       {
-        question: "Is it employer-provided and continuing after closing?",
+        question: "1. How much health insurance coverage do I need?",
         answer:
-          "Employer coverage often ends with employment. We confirm the end date and line up individual coverage that starts the day after, so there is no gap.",
+          "It depends on your health, lifestyle, and budget. A good plan should cover essentials like doctor visits, hospital stays, prescriptions, and preventive care.",
       },
       {
-        question: "Are you on disability or Social Security disability income?",
+        question: "Where can I get health insurance?",
         answer:
-          "Disability status can affect Medicare eligibility and marketplace options. We review which program fits your situation and timeline.",
+          "You can get coverage through your employer, choose an individual plan, or explore options through the ACA Marketplace.",
       },
       {
-        question: "Any major medical expenses expected in the next 12 months?",
+        question: "What types of health insurance plans are available?",
         answer:
-          "Planned surgery, a pregnancy or ongoing specialist care changes which deductible and coinsurance structure costs you least over the full year.",
+          "Common options include HMO, PPO, POS, and EPO plans. Each offers a different balance of cost, flexibility, and provider choice.",
       },
       {
-        question: "Will your premium subsidies continue for at least 12–36 months?",
+        question: "Can I get health insurance if I have a pre-existing condition?",
         answer:
-          "Subsidies follow projected household income. We look at expected earnings so your plan stays affordable beyond the first few months.",
+          "Yes. Under the ACA, you generally can’t be denied coverage or charged more because of a pre-existing condition.",
+      },
+       {
+        question: "Why should I get health insurance if I’m healthy?",
+        answer:
+          "Even if you feel healthy today, unexpected illnesses or accidents can be costly. Insurance gives you financial protection and can help cover preventive care.",
       },
     ],
   },
