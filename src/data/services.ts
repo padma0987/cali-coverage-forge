@@ -197,7 +197,6 @@ export const services: Service[] = [
         answer:"Life is unpredictable. Even if you’re healthy today, unexpected illnesses or accidents can happen and lead to costly medical bills. Health insurance provides financial protection and can also help cover preventive care.",
       },
     ],
-  },
   {
     slug: "medicare",
     title: "Medicare Plans",
