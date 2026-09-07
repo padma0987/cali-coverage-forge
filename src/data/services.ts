@@ -196,8 +196,7 @@ export const services: Service[] = [
        {
         question: "Why should I get health insurance if I’m healthy?",
         answer:
-          "Life is unpredictable, there is no assuarance if you are fit today unexpected illnesses or accidents can't happen to you, 
-          which might be costly in comparison to having an insurance plan. Insurance gives you financial protection and can help cover preventive care.",
+          "Life is unpredictable, there is no assuarance if you are fit today unexpected illnesses or accidents can't happen to you, which might be costly in comparison to having an insurance plan. Insurance gives you financial protection and can help cover preventive care.",
       },
     ],
   },
