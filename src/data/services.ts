@@ -175,7 +175,7 @@ export const services: Service[] = [
       {
         question: "1. How much health insurance coverage do I need?",
         answer:
-          "ss"
+          "ss",
       },
       {
         question: "Where can I get health insurance?",
