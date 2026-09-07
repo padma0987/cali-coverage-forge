@@ -173,7 +173,7 @@ export const services: Service[] = [
           "If you do, bring the current plan summary. We compare it against available options so any change is a measured upgrade rather than a guess.",
       },
       {
-        question: "1. How much health insurance coverage do I need?",
+        question: "How much health insurance coverage do I need?",
         answer:
           "The amount of health insurance range clearly depends on your health condition, lifestyle, age, and budget.Choose a plan that covers essentials like doctor visits, hospital stays, prescriptions, preventive care, surgeries and advance treatments that you may need.",
       },
@@ -194,7 +194,7 @@ export const services: Service[] = [
       },
        {
         question: "Why should I get health insurance if I’m healthy?",
-        answer:"aa",
+        answer:"Life is unpredictable. Even if you’re healthy today, unexpected illnesses or accidents can happen and lead to costly medical bills. Health insurance provides financial protection and can also help cover preventive care.",
       },
     ],
   },
