@@ -58,7 +58,7 @@ export function Header() {
       <div className="mx-auto flex h-[74px] max-w-[1360px] items-center gap-4 px-5 sm:px-8">
         <Link to="/" className="flex min-w-0 shrink-0 items-center gap-3">
           <img
-            src={headshot}
+            src={headshotAsset.original_filename}
             alt="Portrait of Charlie M Richardson, licensed California insurance agent"
             width={816}
             height={816}
