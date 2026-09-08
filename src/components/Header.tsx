@@ -5,7 +5,8 @@ import headshotAsset from "@/assets/charlie-headshot.jpg.asset.json";
 import { serviceMenu } from "@/data/services";
 import { site } from "@/data/site";
 
-const headshot = headshotAsset.url;
+//const headshot = headshotAsset.url;
+import headshot from "@/assets/charlie-headshot.jpg";
 
 export function Header() {
   const [megaOpen, setMegaOpen] = useState(false);
