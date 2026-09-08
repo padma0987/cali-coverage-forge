@@ -156,8 +156,8 @@ export const services: Service[] = [
     explanation: {
       heading: "Health insurance, explained without the jargon",
       body: [
-        "Health insurance pays a defined share of your medical costs in exchange for a monthly premium. What varies between plans is the network of providers, the deductible you pay before cost sharing begins, and how prescriptions are tiered.",
-        "We compare marketplace and off-exchange plans from California carriers, confirm your providers are covered, and check subsidy eligibility so you see the true monthly cost rather than the sticker price.",
+        "Choosing the right health insurance plan means balancing affordability, adequate coverage, and long-term financial security. A good policy ensures you can access quality healthcare while reducing the financial burden of unexpected medical expenses.",
+        "We compare marketplace and off-exchange plans from USA carriers, confirm your providers are covered, and check subsidy eligibility so you see the true monthly cost rather than the sticker price.",
       ],
     },
     considerations: [
