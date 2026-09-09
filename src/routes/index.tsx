@@ -13,20 +13,20 @@ import { approachCards, heroCopy, site } from "@/data/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Charlie M Richardson | Life & Health Insurance in California" },
+      { title: "Charlie M Richardson | Life & Health Insurance in USA" },
       {
         name: "description",
         content:
-          "Insurance solutions for families, individuals and business owners across California, including life insurance, health insurance, Medicare, retirement and disability protection.",
+          "Insurance solutions for families, individuals and business owners across USA, including life insurance, health insurance, Medicare, retirement and disability protection.",
       },
       {
         property: "og:title",
-        content: "Charlie M Richardson | Life & Health Insurance in California",
+        content: "Charlie M Richardson | Life & Health Insurance in USA",
       },
       {
         property: "og:description",
         content:
-          "Life, health, Medicare, retirement and disability coverage for California families and business owners.",
+          "Life, health, Medicare, retirement and disability coverage for USA families and business owners.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -109,7 +109,7 @@ function Home() {
               Approach
             </>
           }
-          body="Every recommendation starts with your numbers, not a product. We explain the mechanics, the costs and the limits of each option, then compare A-rated California carriers so the decision is yours to make with full information."
+          body="Every recommendation starts with your numbers, not a product. We explain the mechanics, the costs and the limits of each option, then compare A-rated USA carriers so the decision is yours to make with full information."
         />
         <div className="mt-14 space-y-4">
           {approachCards.map((card) => (
