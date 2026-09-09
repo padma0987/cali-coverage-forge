@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CTASection } from "@/components/CTASection";
 import { TrustStrip } from "@/components/TrustStrip";
 import { FinalContact } from "@/components/FinalContact";
-import headshotAsset from "@/assets/charlie-headshot.jpg.asset.json";
+import headshotAsset from "@/src/assets/charlie-headshot.jpg.asset.json";
 import { approachCards, site } from "@/data/site";
 
 const headshot = headshotAsset.url;
