@@ -4,7 +4,7 @@ export const site = {
   phoneHref: "tel:+17148096503",
   altPhone: "(818) 389-7970",
   altPhoneHref: "tel:+18183897970",
-  email: "charlie@charlierichardson.com",
+  email: "charlie@charliemrichardson.com",
   location: "California",
   description:
     "Charlie Richardson offering insurance for Health, Medicare, Disability, Retirement planning, Employee benefits and Business protection for individuals, families.",
