@@ -14,13 +14,13 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Meet Charlie M Richardson, an independent California insurance advisor helping families and business owners compare life, health, Medicare and retirement coverage.",
+          "Meet Charlie M Richardson, an independent USA insurance advisor helping families and business owners compare life, health, Medicare and retirement coverage.",
       },
       { property: "og:title", content: "About Charlie M Richardson" },
       {
         property: "og:description",
         content:
-          "An independent California insurance advisor for families, individuals and business owners.",
+          "An independent USA insurance advisor for families, individuals and business owners.",
       },
       { property: "og:url", content: "/about" },
     ],
@@ -43,7 +43,7 @@ function About() {
               built on your numbers.
             </h1>
             <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              {site.name} works with individuals, families and business owners across California.
+              {site.name} works with individuals, families and business owners across USA.
               Because the practice is independent, recommendations begin with what you need rather
               than a single company&rsquo;s product shelf, and quotes are compared across 30+
               A-rated carriers.
