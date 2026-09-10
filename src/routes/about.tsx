@@ -5,7 +5,8 @@ import { FinalContact } from "@/components/FinalContact";
 import headshotAsset from "@/assets/charlie-headshot.jpg.asset.json";
 import { approachCards, site } from "@/data/site";
 
-const headshot = headshotAsset.url;
+//const headshot = headshotAsset.url;
+import headshot from "@/assets/charlie-headshot.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
