@@ -84,7 +84,6 @@ export function QuoteForm() {
 
       const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: "POST",
-        headers: { Accept: "application/json" },
         body: submission,
       });
       const responseData = (await response.json().catch(() => ({}))) as Web3FormsResponse;
