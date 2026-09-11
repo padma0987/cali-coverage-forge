@@ -25,7 +25,8 @@ export const heroCopy = {
 
 export const approachCards = [
  {
-    title: "Step 1 Build Your Plan",
+    step: "Step 1",
+    title: "Build Your Plan",
     body: "Present personalized solutions and a clear plan designed to help you accomplish your goals.",
   },
   {
