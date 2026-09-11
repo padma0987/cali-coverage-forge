@@ -81,13 +81,13 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: var(--font-display);
+    font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
 .step-label {
   color: var(--color-gold); 
-  font-family: var(--font-sans);
+  font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 600;
 }
