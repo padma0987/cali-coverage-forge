@@ -18,9 +18,9 @@ export const trustItems = [
 ];
 
 export const heroCopy = {
-  headline: ["Coverage in USA.", "Protection for What Matters."],
+  headline: ["Insurance, Tax Mitigation & Retirement Planning in all 50 states"],
   paragraph:
-    "Life insurance is about your family keeping their lifestyle, your kids finishing college, your business staying afloat. Charlie M Richardson Insurance offers Indexed Universal Life (IUL), Term Life, Permanent Life, and complete family protection planning across USA — comparing 30+ A-rated carriers to find the right policy at the right price.",
+    "Helping families, individuals, professionals, and business owners protect what they’ve built, explore tax-efficient strategies, prepare for retirement, and build a stronger financial future.",
 };
 
 export const approachCards = [
