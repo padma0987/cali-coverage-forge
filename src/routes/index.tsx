@@ -114,6 +114,7 @@ function Home() {
         <div className="mt-14 space-y-4">
           {approachCards.map((card) => (
             <article key={card.title} className="card-elegant p-7 sm:p-9">
+              <span className="text-sm font-semibold text-blue-600">{card.step}</span>
               <h3 className="text-lg sm:text-xl">{card.title}</h3>
               <p className="mt-4 max-w-4xl text-sm leading-relaxed text-muted-foreground">
                 {card.body}
