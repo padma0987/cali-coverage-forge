@@ -105,7 +105,11 @@
     color: #9b77f0 !important;
   }
 }
-
+.step-label {
+  color: #2563eb; /* Your specific blue hex code */
+  font-size: 0.875rem;
+  font-weight: 600;
+}
 @utility eyebrow {
   font-size: 0.6875rem;
   letter-spacing: 0.18em;
