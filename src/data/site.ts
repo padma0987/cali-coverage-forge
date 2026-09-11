@@ -11,10 +11,10 @@ export const site = {
 };
 
 export const trustItems = [
-  { title: "Free", subtitle: "Consultation" },
-  { title: "Regular", subtitle: "Support" },
-  { title: "One on one", subtitle: "Conversation" },
-  { title: "Reliable", subtitle: "Professional help" },
+  { title: "50 States Covered", subtitle: "Covered" },
+  { title: "Multiple", subtitle: "Carriers Compared" },
+  { title: "1 on 1", subtitle: "Consultations" },
+  { title: "Free", subtitle: "Financial Plans" },
 ];
 
 export const heroCopy = {
