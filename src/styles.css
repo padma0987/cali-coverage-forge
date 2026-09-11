@@ -86,7 +86,8 @@
     overflow-x: hidden;
   }
 .step-label {
-  color: #b77c0f; 
+  color: var(--color-gold); 
+  font-family: var(--font-sans);
   font-size: 1.25rem;
   font-weight: 600;
 }
