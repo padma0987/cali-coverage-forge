@@ -25,11 +25,15 @@ export const heroCopy = {
 
 export const approachCards = [
   {
-    title: "What is Employee Benefits & Group Health Benefits",
-    body: "Group health and employee benefits let a business offer medical, dental, vision, and supplemental coverage to its team through one plan. We help USA employers compare carrier networks, contribution structures, and plan tiers so the benefits package fits both the budget and the people it is meant to protect.",
+    title: "Step 1 — Understand Your Goals",
+    body: "Start with a consultation to understand your needs, priorities, and goals.",
   },
   {
-    title: "How Indexed Universal Life (IUL) Can Be Helpful",
-    body: "An Indexed Universal Life policy pairs permanent life insurance protection with a cash value component whose crediting is tied to the performance of a market index, subject to caps and floors set by the carrier. It can suit families who want lifetime coverage alongside a longer-term accumulation option. We walk through the illustrations line by line, including costs and limitations.",
+    title: "Step 2 — Build Your Plan",
+    body: "Present personalized solutions and a clear plan designed to help you accomplish your goals.",
+  },
+  {
+    title: "Step 3 — Review & Execute",
+    body: "Answer any questions, make adjustments if needed, and once you're comfortable with the plan, put it into action.",
   },
 ];
