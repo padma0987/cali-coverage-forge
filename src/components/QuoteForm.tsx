@@ -2,7 +2,6 @@ import { useState, type FormEvent } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { z } from "zod";
 import { site } from "@/data/site";
-import { getWeb3FormsAccessKey } from "@/lib/web3forms.functions";
 
 const schema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(60),
@@ -69,7 +68,14 @@ export function QuoteForm() {
     setIsSubmitting(true);
 
     try {
-      const accessKey = await getWeb3FormsAccessKey();
+      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+      if (!accessKey) {
+        throw new Error(
+          "The quote form is not configured yet. Please add VITE_WEB3FORMS_ACCESS_KEY to the project's environment variables."
+        );
+      }
+
       const submission = new FormData();
       submission.append("access_key", accessKey);
       submission.append("subject", "New Insurance Quote Request - Charlie M Richardson");
@@ -77,6 +83,7 @@ export function QuoteForm() {
       submission.append("first_name", result.data.firstName);
       submission.append("last_name", result.data.lastName);
       submission.append("email", result.data.email);
+      submission.append("replyto", result.data.email);
       submission.append("phone", result.data.phone);
       submission.append("message", result.data.message || "Not provided");
       submission.append("submitted_at", new Date().toISOString());
