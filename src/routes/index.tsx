@@ -83,9 +83,9 @@ function Home() {
           eyebrow="We serve"
           heading={
             <>
-              Services and offers
+              Serving Individuals, Families,
               <br />
-              curated for your need
+             Professionals & Businesses Nationwide 
             </>
           }
           body={heroCopy.paragraph}
@@ -109,7 +109,7 @@ function Home() {
               Approach
             </>
           }
-          body="Every recommendation starts with your numbers, not a product. We explain the mechanics, the costs and the limits of each option, then compare A-rated USA carriers so the decision is yours to make with full information."
+          body="Charlie M. Richardson provides insurance, retirement and financial planning across all 50 states, helping clients protect their family, income, businesses, and financial futures through personalized strategies built around their goals."
         />
         <div className="mt-14 space-y-4">
           {approachCards.map((card) => (
