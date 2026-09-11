@@ -25,7 +25,8 @@ export const heroCopy = {
 
 export const approachCards = [
   {
-    title: "Step 1 <br>Understand Your Goals",
+    title: "Step 1",
+    title: "Understand Your Goals",
     body: "Start with a consultation to understand your needs, priorities, and goals.",
   },
   {
