@@ -85,7 +85,11 @@
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
-
+.step-label {
+  color: #2563eb; /* Your specific blue hex code */
+  font-size: 0.875rem;
+  font-weight: 600;
+}
   h1,
   h2,
   h3 {
@@ -104,11 +108,6 @@
   .serviceicon {
     color: #9b77f0 !important;
   }
-}
-.step-label {
-  color: #2563eb; /* Your specific blue hex code */
-  font-size: 0.875rem;
-  font-weight: 600;
 }
 @utility eyebrow {
   font-size: 0.6875rem;
