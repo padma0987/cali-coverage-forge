@@ -3,7 +3,7 @@ export const site = {
   phone: "+1 714-809-6503",
   phoneHref: "tel:+17148096503",
   altPhone: "(818) 389-7970",
-  altPhoneHref: "tel:+18183897970",
+  altPhoneHref: "tel:+17148096503",
   email: "charlie@charliemrichardson.com",
   location: "USA",
   description:
