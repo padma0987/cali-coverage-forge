@@ -86,8 +86,8 @@
     overflow-x: hidden;
   }
 .step-label {
-  color: #2563eb; /* Your specific blue hex code */
-  font-size: 0.875rem;
+  color: #d7b24d; 
+  font-size: 1.25rem;
   font-weight: 600;
 }
   h1,
