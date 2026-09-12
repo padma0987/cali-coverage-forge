@@ -84,6 +84,7 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+      font-size: 1.25rem;
   }
 .step-label {
   color: var(--color-gold); 
