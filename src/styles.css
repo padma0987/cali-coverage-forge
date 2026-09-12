@@ -82,6 +82,7 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
+    font-size: 1.25rem;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 
