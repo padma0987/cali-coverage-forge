@@ -148,10 +148,6 @@ export const services: Service[] = [
         title: "You want to offer employee benefits without overwhelming your budget",
         body: "Offering competitive benefits can help businesses attract and retain great employees, but the right solution looks different for every company. I help business owners explore group health insurance; level-funded plans, ICHRA options, and employee benefit strategies designed around their workforce and budget.",
       },
-      {
-        title: "A life change left you with a coverage gap",
-        body: "Leaving a job, turning 26, moving or a new baby opens a special enrollment window with a deadline worth meeting.",
-      },
     ],
     explanation: {
       heading: "Health insurance, explained without the jargon",
