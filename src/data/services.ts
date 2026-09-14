@@ -178,6 +178,11 @@ export const services: Service[] = [
         answer:
           "Open Enrollment dates vary by state, with some state-based marketplaces offering extended enrollment periods. Outside of Open Enrollment, you may still qualify for a Special Enrollment Period if you experience a Qualifying Life Event, such as losing health coverage, getting married, having a baby, or moving to a new coverage area. Contact me and I'll help determine what enrollment options are currently available in your state.",
       },
+      {
+        question: "What's the difference between an HMO, PPO, and EPO?",
+        answer:
+          "HMO plans generally use a more structured network and may require you to select a primary care doctor and get referrals for specialists. PPO plans typically offer more flexibility, including access to out-of-network providers, but often come with higher costs. EPO plans generally don't require referrals but usually only cover care within the plan's network, except for emergencies.",
+      },
     ],
   },
   {
