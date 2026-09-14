@@ -30,10 +30,12 @@ export const approachCards = [
     body: "Present personalized solutions and a clear plan designed to help you accomplish your goals.",
   },
   {
+    step: "Step 2",
     title: "Step 2 Build Your Plan",
     body: "Present personalized solutions and a clear plan designed to help you accomplish your goals.",
   },
   {
+    step: "Step 3",
     title: "Step 3 Review & Execute",
     body: "Answer any questions, make adjustments if needed, and once you're comfortable with the plan, put it into action.",
   },
