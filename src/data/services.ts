@@ -164,33 +164,19 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: "Do you have active health insurance?",
+        question: "How much does it cost to work with a health insurance agent?",
         answer:
-          "If you do, bring the current plan summary. We compare it against available options so any change is a measured upgrade rather than a guess.",
+          "Nothing. There is no cost to work with me. I'm compensated by the insurance carrier, so you get personalized help comparing plans, choosing coverage, and navigating enrollment from start to finish — at no additional cost to you.",
       },
       {
-        question: "How much health insurance coverage do I need?",
+        question: "Do you offer group health insurance for employers nationwide?",
         answer:
-          "The amount of health insurance range clearly depends on your health condition, lifestyle, age, and budget.Choose a plan that covers essentials like doctor visits, hospital stays, prescriptions, preventive care, surgeries and advance treatments that you may need.",
+          "Yes. I help businesses across the country explore employee benefit solutions for small and large groups, including traditional group health insurance, ICHRA, level-funded plans, and ancillary benefits such as dental, vision, life, and disability insurance.",
       },
       {
-        question: "Where can I get health insurance?",
+        question: "When can I enroll in health insurance?",
         answer:
-          "You can get coverage through your job if your employer offers an employee-sponsored health plan, choose an individual medical health insurance provider or check ACA Marketplace.",
-      },
-      {
-        question: "What types of health insurance plans are available?",
-        answer:
-          "Common options include Health Maintenance Organization (HMO), Preferred Provider Organization (PPO), Exclusive Provider Organization (EPO), and Point of Service (POS) plans. Each offers a different balance of cost, flexibility, and provider choice. Talk to us to know what fits you best.",
-      },
-      {
-        question: "Can I get health insurance if I have a pre-existing condition?",
-        answer:
-          "According to Affordable Care Act (ACA), insurance companies cannot refuse coverage or charge you higher premiums because of a pre-existing health condition.",
-      },
-       {
-        question: "Why should I get health insurance if I’m healthy?",
-        answer:"Life is unpredictable. Even if you’re healthy today, unexpected illnesses or accidents can happen and lead to costly medical bills. Health insurance provides financial protection and can also help cover preventive care.",
+          "Open Enrollment dates vary by state, with some state-based marketplaces offering extended enrollment periods. Outside of Open Enrollment, you may still qualify for a Special Enrollment Period if you experience a Qualifying Life Event, such as losing health coverage, getting married, having a baby, or moving to a new coverage area. Contact me and I'll help determine what enrollment options are currently available in your state.",
       },
     ],
   },
