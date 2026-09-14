@@ -137,16 +137,16 @@ export const services: Service[] = [
     problemHeading: ["What's actually", "going wrong with", "your health coverage."],
     problems: [
       {
-        title: "Your plan network doesn't include your doctors",
-        body: "Premium alone is a poor way to pick a plan. We check that your physicians and hospitals are in-network before you enroll.",
+        title: "Your premiums keep increasing, but your benefits aren't.",
+        body: "Health insurance costs can change significantly from year to year. Instead of automatically renewing the same plan, I can review your current coverage and explore other options to see if there's a better fit for your needs and budget.",
       },
       {
-        title: "You're paying for a tier you don't use",
-        body: "Deductible, coinsurance and prescription tiers should match how you actually use care during the year.",
+        title: "Your plan doesn't cover the doctors you actually want to see.",
+        body: "A lower premium doesn't mean much if your preferred doctors, specialists, hospitals, or prescriptions aren't covered. I help you evaluate the details before enrolling so you can choose a plan based on more than just the monthly price.",
       },
       {
-        title: "You may qualify for subsidies you never claimed",
-        body: "Household income and family size can change marketplace subsidy eligibility. We check it at every renewal.",
+        title: "You want to offer employee benefits without overwhelming your budget",
+        body: "Offering competitive benefits can help businesses attract and retain great employees, but the right solution looks different for every company. I help business owners explore group health insurance; level-funded plans, ICHRA options, and employee benefit strategies designed around their workforce and budget.",
       },
       {
         title: "A life change left you with a coverage gap",
