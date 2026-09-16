@@ -3,7 +3,7 @@ import { SectionIntro } from "@/components/SectionIntro";
 import { ServiceCard } from "@/components/ServiceCard";
 import { CTASection } from "@/components/CTASection";
 import { FinalContact } from "@/components/FinalContact";
-import { services } from "@/data/services";
+import { services, servicesPageData } from "@/data/services";
 
 export const Route = createFileRoute("/services/")({
   head: () => ({
@@ -28,17 +28,20 @@ export const Route = createFileRoute("/services/")({
 });
 
 function ServicesPage() {
+  const servicesHeading = services.heading?.trim();
+
   return (
     <>
-      <section className="mx-auto max-w-[1360px] px-5 pb-8 pt-16 sm:px-8 sm:pt-20">
-        <span className="block h-px w-12 bg-gold" aria-hidden="true" />
-        <h1 className="mt-8 max-w-3xl text-[38px] leading-[1.08] sm:text-[54px]">
-          Coverage built around
-          <br />
-          how you actually live.
-        </h1>
-      </section>
-
+      {servicesHeading && (
+        <section className="mx-auto max-w-[1360px] px-5 pb-16 pt-14 sm:px-8 sm:pb-24 sm:pt-20">
+          <div className="fade-up max-w-3xl">
+            <span className="block h-px w-12 bg-gold" aria-hidden="true" />
+            <h1 className="mt-8 break-words text-[38px] leading-[1.08] sm:text-[56px] lg:text-[64px]">
+              {servicesHeading}
+            </h1>
+          </div>
+        </section>
+      )}
       <section className="mx-auto max-w-[1360px] px-5 py-12 sm:px-8 sm:py-16">
         <SectionIntro
           eyebrow="We serve"
@@ -59,7 +62,7 @@ function ServicesPage() {
       </section>
 
       <CTASection />
-      <FinalContact />
+      <FinalContact {...servicesPageData} />
     </>
   );
 }

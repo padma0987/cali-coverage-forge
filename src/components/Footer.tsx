@@ -9,7 +9,7 @@ const columns = [
       { label: "Health, Medicare & Group Benefits", slug: "health-insurance" },
       { label: "Health Insurance", slug: "health-insurance" },
       { label: "Group Health & Employee Benefits", slug: "group-health" },
-      { label: "Medicare Plans", slug: "medicare" },
+      //{ label: "Medicare Plans", slug: "medicare" },
     ],
   },
   {

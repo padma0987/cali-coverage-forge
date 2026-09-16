@@ -34,23 +34,37 @@ function ServiceDetail() {
   const { slug } = Route.useLoaderData();
   const service = serviceBySlug(slug)!;
   const groupTabs = serviceMenu.find((g) => g.items.some((i) => i.slug === service.slug));
-
+  const serviceHeading = service.heading?.trim();
+  const serviceHeadingBelowContent = service.headingBelowContent?.trim();
+  const ProblemHeading = serviceHeading ? "h2" : "h1";
 
 
   return (
     <>
       <section className="mx-auto max-w-[1360px] px-5 pb-12 pt-16 sm:px-8 sm:pb-20 sm:pt-20">
         <span className="block h-px w-12 bg-gold" aria-hidden="true" />
-        <div className="mt-8 grid gap-12 lg:grid-cols-2 lg:gap-20">
+        {serviceHeading && (
+          <div className="fade-up mt-8 max-w-3xl">
+            <h1 className="break-words text-[38px] leading-[1.08] sm:text-[56px] lg:text-[64px]">
+              {serviceHeading}
+            </h1>
+            {serviceHeadingBelowContent && (
+              <p className="body-copy mt-6 max-w-2xl text-muted-foreground">
+                {serviceHeadingBelowContent}
+              </p>
+            )}
+          </div>
+        )}
+        <div className={`${serviceHeading ? "mt-14" : "mt-8"} grid gap-12 lg:grid-cols-2 lg:gap-20`}>
           <div>
             <p className="eyebrow">The problem</p>
-            <h1 className="mt-4 text-[34px] leading-[1.1] sm:text-[46px]">
+            <ProblemHeading className="mt-4 text-[34px] leading-[1.1] sm:text-[46px]">
               {service.problemHeading.map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
               ))}
-            </h1>
+            </ProblemHeading>
           </div>
           <ol className="divide-y divide-border border-t border-border">
             {service.problems.map((p, i) => (
@@ -145,7 +159,7 @@ function ServiceDetail() {
         </div>
       </section>
 
-      <FinalContact />
+      <FinalContact {...service} />
     </>
   );
 }

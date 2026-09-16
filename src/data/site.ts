@@ -40,3 +40,20 @@ export const approachCards = [
     body: "Answer any questions, make adjustments if needed, and once you're comfortable with the plan, put it into action.",
   },
 ];
+const standardFinalWordData =
+  "One short conversation. Real options, real numbers. No pressure, no spam, no cost.";
+
+export const homePageData = {
+  finalWordHeading: "Get your free life\ninsurance consultation.\nServing all of California.",
+  finalWordData: standardFinalWordData,
+};
+
+export const aboutPageData = {
+  finalWordHeading: "Get your free life\ninsurance consultation.\nServing all of California.",
+  finalWordData: standardFinalWordData,
+};
+
+export const contactPageData = {
+  finalWordHeading: "Get your free\ninsurance consultation.\nServing all of California.",
+  finalWordData: standardFinalWordData,
+};

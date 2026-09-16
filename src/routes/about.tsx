@@ -3,7 +3,7 @@ import { CTASection } from "@/components/CTASection";
 import { TrustStrip } from "@/components/TrustStrip";
 import { FinalContact } from "@/components/FinalContact";
 import headshotAsset from "@/assets/charlie-headshot.jpg.asset.json";
-import { approachCards, site } from "@/data/site";
+import { aboutPageData, approachCards, site } from "@/data/site";
 
 //const headshot = headshotAsset.url;
 import headshot from "@/assets/charlie-headshot.jpg";
@@ -88,7 +88,7 @@ function About() {
       </section>
 
       <CTASection />
-      <FinalContact />
+      <FinalContact {...aboutPageData} />
     </>
   );
 }

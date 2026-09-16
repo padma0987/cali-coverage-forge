@@ -106,6 +106,10 @@ export type Service = {
   icon: LucideIcon | ComponentType<SVGProps<SVGSVGElement>>;
   metaTitle: string;
   metaDescription: string;
+  heading?: string | null;
+  headingBelowContent?: string | null;
+  finalWordHeading?: string | null;
+  finalWordData?: string | null;
   problemHeading: string[];
   problems: { title: string; body: string }[];
   explanation: { heading: string; body: string[] };
@@ -114,6 +118,10 @@ export type Service = {
   featured?: boolean;
 };
 
+export const servicesPageData = {
+  finalWordHeading: "Get your free life\ninsurance consultation.\nServing all of California.",
+  finalWordData: "One short conversation. Real options, real numbers. No pressure, no spam, no cost.",
+};
 const lifeProblems = [
   {
     title: "Coverage from work is not enough",
@@ -142,9 +150,13 @@ export const services: Service[] = [
     cardDescription:
       "Individual and family medical plans compared across California carriers, networks and subsidy eligibility.",
     metaTitle: "Health Insurance in California | Charlie M Richardson",
+    heading : "Health Insurance Nationwide — Coverage Built Around Your Lifestyle",
+    headingBelowContent : "Charlie M. Richardson helps individuals, families, businesses, and employers nationwide explore health insurance options designed around their needs and budget. From provider networks and deductibles to premiums and plan benefits, I help simplify the process so you can confidently choose coverage that makes sense for you, your family, or your employees, at no cost to you. ",
+    finalWordHeading : "Let's Find the Right Health Coverage for You.", 
+    finalWordData : "Free health insurance consultations nationwide. One simple conversation. Personalized options. Clear answers. No pressure. No cost.",
     metaDescription:
       "Compare individual and family health insurance plans across California carriers, networks and subsidy options with Charlie M Richardson.",
-    problemHeading: ["What's actually", "going wrong with", "your health coverage."],
+    problemHeading: ["Health Insurance Shouldn't Be This Complicated."],
     problems: [
       {
         title: "Your premiums keep increasing, but your benefits aren't.",
@@ -269,6 +281,10 @@ export const services: Service[] = [
     title: "Life Insurance",
     icon: LifeInsuranceIcon,
     featured: true,
+    heading : "",
+    headingBelowContent : "",
+    finalWordHeading : "Get your free life insurance consultation. Serving all of California.", 
+    finalWordData : "One short conversation. Real options, real numbers. No pressure, no spam, no cost.",
     cardDescription:
       "Term, Whole and Permanent Life options for estate planning, income replacement and guaranteed protection.",
     metaTitle: "Life Insurance in California | Charlie M Richardson",
@@ -322,6 +338,10 @@ export const services: Service[] = [
     title: "Retirement Planning",
     icon: RetirementIcon,
     featured: true,
+    heading : "",
+    headingBelowContent : "",
+    finalWordHeading : "Get your free life insurance consultation. Serving all of California.", 
+    finalWordData : "One short conversation. Real options, real numbers. No pressure, no spam, no cost.",
     cardDescription: "Annuity and income strategies designed to turn savings into predictable retirement cash flow.",
     metaTitle: "Retirement Planning in California | Charlie M Richardson",
     metaDescription:
@@ -389,27 +409,31 @@ export const services: Service[] = [
     title: "Disability Insurance",
     icon: DisabilityInsuranceIcon,
     featured: true,
+    heading : "Disability Insurance Nationwide — Protect Your Income & Your Business",
+    headingBelowContent : "Your ability to earn an income is one of your most valuable assets. Charlie M. Richardson helps individuals and professionals protect their income if an illness or injury prevents them from working, while helping business owners explore coverage designed to keep essential business expenses covered during a disability.",
+    finalWordHeading : "Get Your Free Disability Insurance Consultation — Available Nationwide",
+    finalWordData : "One conversation. Multiple options. Personalized guidance to help you find the right coverage for yourself, your family, or your business — at no cost to you.",
     cardDescription: "Income protection that keeps paying if illness or injury stops you from working.",
     metaTitle: "Disability Insurance in California | Charlie M Richardson",
     metaDescription:
       "Short and long-term disability income protection for California professionals, business owners and self-employed workers.",
-    problemHeading: ["What's actually", "going wrong with", "your income protection."],
+    problemHeading: ["Your Income Powers Everything. Is It Protected?"],
     problems: [
       {
-        title: "State disability benefits replace only part of your pay",
-        body: "For most households the gap between the benefit and actual expenses is significant and lasts as long as the disability.",
+        title: "Your Bills Don't Stop Just Because Your Paycheck Does",
+        body: "An illness or injury could prevent you from working for months or even longer. Individual disability insurance can replace a portion of your income, helping you continue covering everyday expenses while you focus on recovery.",
       },
       {
-        title: "Group coverage may stop at the office door",
-        body: "Employer disability plans often end when the job does, and benefits are usually taxable when the employer pays the premium.",
+        title: "Your Employer's Disability Coverage May Leave a Gap",
+        body: "Employer-sponsored disability benefits can provide valuable protection, but they may only replace a portion of your income and can have benefit limits. Individual disability insurance can provide additional protection designed around your income and financial needs.",
       },
       {
-        title: "The definition of disability matters more than the price",
-        body: "An own-occupation definition protects your specific profession. A weaker definition can deny a claim you expected to be covered.",
+        title: "Your Business Still Has Expenses When You Can't Work",
+        body: "Rent, payroll, utilities, and other operating expenses don't disappear when a business owner becomes disabled. Business Overhead Expense (BOE) insurance can help cover eligible business expenses while you're unable to work.",
       },
       {
-        title: "Self-employed income has no safety net",
-        body: "Without an employer plan, an individual policy is the only thing standing between an injury and lost revenue.",
+        title: "Your Employees Need Income Protection Too",
+        body: "Group disability insurance can add another valuable layer to your employee benefits package, helping employees protect their income while giving your business another tool to attract and retain talent.",
       },
     ],
     explanation: {
@@ -427,25 +451,25 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: "How much of my income can be covered?",
+        question: "How much disability insurance do I need?",
         answer:
-          "Carriers typically replace roughly 60 percent of gross income, and benefits from a personally paid policy are generally received tax free.",
+          "Many disability insurance policies are designed to replace approximately 60–70% of your income, but the right amount depends on your individual situation. I’ll review your income, existing employer coverage, monthly obligations, and financial needs to identify potential gaps and determine an appropriate level of protection.",
       },
       {
-        question: "Isn't state disability enough?",
-        answer: "State programs are time limited and capped. Most professionals need private coverage on top.",
+        question: "What's the difference between “own occupation” and “any occupation” disability insurance?",
+        answer: "“Own occupation” coverage may pay benefits when a disability prevents you from performing the duties of your specific occupation, even if you're able to work in another capacity. “Any occupation” coverage generally has a broader standard, requiring your disability to prevent you from working in another occupation for which you're reasonably suited. For specialized and high-income professionals, the definition of disability can be one of the most important features of a policy. I'll help you understand the differences and find coverage that fits your profession and income.",
       },
       {
-        question: "What is an elimination period?",
-        answer: "The waiting time before benefits begin, commonly 30 to 90 days. A longer wait lowers the premium.",
+        question: "How long do disability insurance benefits last?",
+        answer: "Disability insurance policies can offer a variety of benefit periods, such as 2 years, 5 years, or coverage extending to age 65 or 67. The right benefit period depends on your income, occupation, financial obligations, existing coverage, and how long you want your income protected. I’ll help you compare the options and choose a benefit period that fits your needs.",
       },
       {
-        question: "Can self-employed people get coverage?",
-        answer: "Yes, with income documented through tax returns. This is one of the most common cases we place.",
+        question: "What is Business Overhead Expense (BOE) insurance?",
+        answer: "Business Overhead Expense insurance helps cover eligible operating expenses if a disability prevents a business owner from working. Depending on the policy, this can include expenses such as rent, employee salaries, utilities, insurance premiums, and other recurring overhead — helping keep the business running while the owner focuses on recovery. Unlike individual disability insurance, which is designed to help replace your personal income, BOE coverage is designed to help protect the business you've built.",
       },
       {
-        question: "Does it cover mental health conditions?",
-        answer: "Many policies do, sometimes with a limited benefit period. We flag those limits before you apply.",
+        question: "Is disability insurance tax-deductible?",
+        answer: "Individual disability insurance premiums are generally not tax-deductible when paid personally with after-tax dollars, and benefits are generally received income-tax-free. Business Overhead Expense (BOE) insurance premiums may generally be deductible as a business expense, while benefits received may be taxable. Tax treatment can vary based on how the policy is structured and who pays the premiums, so I recommend coordinating with your tax professional when evaluating your coverage.",
       },
     ],
   },
@@ -454,6 +478,10 @@ export const services: Service[] = [
     title: "Business Owner Protection",
     icon: BusinessInsuranceIcon,
     featured: true,
+    heading : "",
+    headingBelowContent : "",
+    finalWordHeading : "Get your free life insurance consultation. Serving all of California.", 
+    finalWordData : "One short conversation. Real options, real numbers. No pressure, no spam, no cost.",
     cardDescription: "Key person, buy-sell funding and executive benefit strategies for California business owners.",
     metaTitle: "Business Owner Insurance in California | Charlie M Richardson",
     metaDescription:
@@ -519,6 +547,10 @@ export const services: Service[] = [
     slug: "group-health",
     title: "Group Health & Employee Benefits",
     icon: Users,
+    heading : "",
+    headingBelowContent : "",
+    finalWordHeading : "Get your free life insurance consultation. Serving all of California.", 
+    finalWordData : "One short conversation. Real options, real numbers. No pressure, no spam, no cost.",
     cardDescription: "Employer-sponsored medical, dental, vision and supplemental benefits built around your team.",
     metaTitle: "Group Health & Employee Benefits California | Charlie M Richardson",
     metaDescription:
@@ -583,6 +615,10 @@ export const services: Service[] = [
     slug: "iul",
     title: "Indexed Universal Life (IUL)",
     icon: TrendingUp,
+    heading : "",
+    headingBelowContent : "",
+    finalWordHeading : "Get your free life insurance consultation. Serving all of California.", 
+    finalWordData : "One short conversation. Real options, real numbers. No pressure, no spam, no cost.",
     cardDescription:
       "Permanent protection with cash value crediting tied to index performance, subject to caps and floors.",
     metaTitle: "Indexed Universal Life (IUL) California | Charlie M Richardson",
@@ -649,6 +685,10 @@ export const services: Service[] = [
   {
     slug: "personal-insurance",
     title: "Personal Insurance",
+    heading : "",
+    headingBelowContent : "",
+    finalWordHeading : "", 
+    finalWordData : "",
     icon: UserRound,
     cardDescription: "Individual coverage reviews across life, health and income protection for one household.",
     metaTitle: "Personal Insurance Review California | Charlie M Richardson",

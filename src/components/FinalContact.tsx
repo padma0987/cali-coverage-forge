@@ -2,26 +2,43 @@ import { Mail, Phone } from "lucide-react";
 import { QuoteForm } from "./QuoteForm";
 import { site } from "@/data/site";
 
-export function FinalContact({
-  heading = ["Get your free life", "insurance consultation.", "Serving all of California."],
-}: {
-  heading?: string[];
-}) {
+export type FinalWordCopy = {
+  finalWordHeading?: string | null;
+  finalWordData?: string | null;
+};
+
+export function getFinalWordContent(data: FinalWordCopy = {}) {
+  const heading = data.finalWordHeading?.trim();
+  const body = data.finalWordData?.trim();
+
+  if (!heading || !body) return null;
+
+  return { heading, body };
+}
+
+export function FinalContact(props: FinalWordCopy) {
+  const finalWord = getFinalWordContent(props);
+
+  if (!finalWord) return null;
+
+  const headingLines = finalWord.heading
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+
   return (
     <section className="mx-auto max-w-[1360px] px-5 py-16 sm:px-8 sm:py-24">
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
         <div>
           <p className="eyebrow">Final word</p>
           <h2 className="mt-4 text-3xl leading-[1.15] sm:text-[42px]">
-            {heading.map((line) => (
-              <span key={line} className="block">
+            {headingLines.map((line, index) => (
+              <span key={`${line}-${index}`} className="block">
                 {line}
               </span>
             ))}
           </h2>
-          <p className="body-copy mt-5 max-w-md text-muted-foreground">
-            One short conversation. Real options, real numbers. No pressure, no spam, no cost.
-          </p>
+          <p className="body-copy mt-5 max-w-md text-muted-foreground">{finalWord.body}</p>
           <ul className="mt-8 space-y-4 text-sm">
             <li>
               <a

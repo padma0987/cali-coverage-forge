@@ -8,7 +8,7 @@ import { Accordion } from "@/components/Accordion";
 import { FinalContact } from "@/components/FinalContact";
 import { featuredServices } from "@/data/services";
 import { generalFaqs } from "@/data/faqs";
-import { approachCards, heroCopy, site } from "@/data/site";
+import { approachCards, heroCopy, homePageData, site } from "@/data/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -138,7 +138,7 @@ function Home() {
         </div>
       </section>
 
-      <FinalContact />
+      <FinalContact {...homePageData} />
     </>
   );
 }

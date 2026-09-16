@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FinalContact } from "@/components/FinalContact";
 import { CTASection } from "@/components/CTASection";
+import { contactPageData } from "@/data/site";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -35,9 +36,7 @@ function Contact() {
         </h1>
       </section>
 
-      <FinalContact
-        heading={["Get your free", "insurance consultation.", "Serving all of California."]}
-      />
+      <FinalContact {...contactPageData} />
       <CTASection />
     </>
   );
