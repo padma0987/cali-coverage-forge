@@ -68,7 +68,7 @@ export function QuoteForm() {
     setIsSubmitting(true);
 
     try {
-      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+      const accessKey = import.meta.env["VITE_WEB3FORMS_ACCESS_KEY"];
 
       if (!accessKey) {
         throw new Error(
@@ -119,7 +119,7 @@ export function QuoteForm() {
       <div className="rounded-xl border border-border bg-card p-8 text-center sm:p-12">
         <CheckCircle2 className="mx-auto h-10 w-10 text-gold" />
         <h3 className="mt-5 text-2xl">Request received</h3>
-        <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
+        <p className="body-copy mx-auto mt-3 max-w-sm text-muted-foreground">
           Thank you for contacting us. Your request has been submitted successfully. We will get
           back to you shortly.
         </p>
@@ -160,7 +160,7 @@ export function QuoteForm() {
               className="mt-2 w-full rounded-md border border-input bg-background px-3.5 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-gold focus:outline-none"
             />
             {errors[f.name] && (
-              <p id={`${f.name}-error`} className="mt-1.5 text-xs text-destructive">
+               <p id={`${f.name}-error`} className="body-copy mt-1.5 text-destructive">
                 {errors[f.name]}
               </p>
             )}
@@ -185,7 +185,7 @@ export function QuoteForm() {
       </div>
 
       {submitError && (
-        <p role="alert" className="mt-4 text-center text-xs text-destructive">
+        <p role="alert" className="body-copy mt-4 text-center text-destructive">
           {submitError}
         </p>
       )}
@@ -198,7 +198,7 @@ export function QuoteForm() {
       >
         {isSubmitting ? "Sending..." : "Request Your Free Quote"}
       </button>
-      <p className="mt-4 text-center text-xs text-muted-foreground">
+      <p className="body-copy mt-4 text-center text-muted-foreground">
         Prefer to call? Reach us at{" "}
         <a href={site.phoneHref} className="text-gold hover:underline">
           {site.phone}

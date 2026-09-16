@@ -48,7 +48,7 @@ function Home() {
               </span>
             ))}
           </h1>
-          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+          <p className="body-copy mt-6 max-w-2xl text-muted-foreground">
             {heroCopy.paragraph}
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -116,7 +116,7 @@ function Home() {
             <article key={card.title} className="card-elegant p-7 sm:p-9">
              <span className="step-label">{card.step}</span>
               <h3 className="text-lg sm:text-xl">{card.title}</h3>
-              <p className="mt-4 max-w-4xl text-sm leading-relaxed text-muted-foreground">
+              <p className="body-copy mt-4 max-w-4xl text-muted-foreground">
                 {card.body}
               </p>
             </article>

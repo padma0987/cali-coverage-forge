@@ -60,7 +60,7 @@ function ServiceDetail() {
                 </span>
                 <div className="min-w-0">
                   <h2 className="font-sans text-[15px] font-medium">{p.title}</h2>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
+                  <p className="body-copy mt-2 text-muted-foreground">{p.body}</p>
                 </div>
               </li>
             ))}
@@ -77,7 +77,7 @@ function ServiceDetail() {
             <h2 className="mt-4 text-3xl leading-[1.15] sm:text-[40px]">{service.title}</h2>
             <p className="mt-6 max-w-md font-sans text-lg">{service.explanation.heading}</p>
             {service.explanation.body.map((para) => (
-              <p key={para} className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
+              <p key={para} className="body-copy mt-4 max-w-md text-muted-foreground">
                 {para}
               </p>
             ))}
@@ -103,7 +103,7 @@ function ServiceDetail() {
               </h3>
               <ul className="mt-5 space-y-3">
                 {service.considerations.map((c) => (
-                  <li key={c} className="flex gap-3 text-sm text-muted-foreground">
+                  <li key={c} className="body-copy flex gap-3 text-muted-foreground">
                     <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-gold" />
                     {c}
                   </li>

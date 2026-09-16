@@ -19,7 +19,7 @@ export function FinalContact({
               </span>
             ))}
           </h2>
-          <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
+          <p className="body-copy mt-5 max-w-md text-muted-foreground">
             One short conversation. Real options, real numbers. No pressure, no spam, no cost.
           </p>
           <ul className="mt-8 space-y-4 text-sm">

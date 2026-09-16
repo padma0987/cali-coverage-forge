@@ -16,7 +16,7 @@ export function ServiceCard({ service }: { service: Service }) {
         <h3 className="text-xl">{service.title}</h3>
         <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-gold opacity-0 transition-opacity group-hover:opacity-100" />
       </div>
-      <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">{service.cardDescription}</p>
+      <p className="body-copy mt-3 text-muted-foreground">{service.cardDescription}</p>
     </Link>
   );
 }
