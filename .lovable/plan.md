@@ -1,16 +1,14 @@
-# Fix the existing Web3Forms submission
+# Improve body-text readability sitewide
 
 ## Scope
-- Keep the current quote/contact form’s layout, styling, validation, and success presentation unchanged.
-- Submit the existing five fields as `first_name`, `last_name`, `email`, `phone`, and `message` directly to Web3Forms with multipart `FormData`.
-- Include the configured access key, requested subject, sender name, visitor reply-to email, submission timestamp, and existing botcheck field.
-- Preserve entered values on Web3Forms or network errors, disable duplicate submissions, and reset only after `success === true`.
+- Introduce one shared body-copy typography utility using the existing design system: approximately 16px with 1.6 line height on mobile and 18px with 1.7 line height from desktop sizes.
+- Apply it consistently to homepage supporting copy, section descriptions, service-card descriptions, service detail copy, About copy, contact supporting content, FAQ answers, form helper/status text, and footer descriptive text.
+- Keep compact interface text unchanged, including navigation, buttons, labels, eyebrows, phone links, footer navigation, and legal text.
+
+## Preserve exactly
+- Do not change any H1, H2, or H3 classes, font sizes, weights, line heights, letter spacing, or page-title styling.
+- Do not alter layout, spacing, colors, animations, header sizing, or responsive structure.
 
 ## Verification
-- Confirm the page renders and validation still works.
-- Intercept a real browser submission to verify the POST URL and every submitted FormData field without exposing the access key.
-- Confirm error responses retain values and never show a false success state.
-
-## Technical details
-- Continue reading the project’s configured `WEB3FORMS_ACCESS_KEY` through the existing server function at submit time; no fake key or alternative email service will be added.
-- Use the exact network-error message requested and surface Web3Forms’ returned error when available.
+- Check Home, About, Services, Contact, and a service detail page at desktop and mobile widths.
+- Confirm body copy is larger and readable, headings retain their computed sizes, and no horizontal overflow appears.
