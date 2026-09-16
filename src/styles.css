@@ -83,6 +83,8 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
@@ -117,6 +119,16 @@
   text-transform: uppercase;
   color: var(--color-gold);
   font-weight: 500;
+}
+
+@utility body-copy {
+  font-size: 1rem;
+  line-height: 1.6;
+
+  @media (min-width: 640px) {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
 }
 
 @utility btn-gold {

@@ -18,7 +18,7 @@ export function SectionIntro({
         <h2 className="mt-4 text-3xl leading-[1.15] sm:text-[42px]">{heading}</h2>
       </div>
       <div className="self-end">
-        {body && <p className="text-sm leading-relaxed text-muted-foreground">{body}</p>}
+        {body && <p className="body-copy text-muted-foreground">{body}</p>}
         {children}
       </div>
     </div>

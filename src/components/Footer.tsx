@@ -35,7 +35,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
           <div>
             <p className="text-[15px] font-semibold">{site.name}</p>
-            <p className="mt-4 max-w-[230px] text-[13px] leading-relaxed text-muted-foreground">
+            <p className="body-copy mt-4 max-w-[260px] text-muted-foreground">
               {site.description}
             </p>
           </div>

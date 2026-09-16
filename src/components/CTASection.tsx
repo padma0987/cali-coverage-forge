@@ -17,7 +17,7 @@ export function CTASection() {
               <br />
               but we can prepare
             </h2>
-            <p className="mt-5 max-w-lg text-sm leading-relaxed text-muted-foreground">
+            <p className="body-copy mt-5 max-w-lg text-muted-foreground">
               A short conversation is usually enough to see where your coverage stands today, what a
               gap would actually cost your household, and which carriers price your situation best.
               No pressure, no cost.
