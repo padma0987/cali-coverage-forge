@@ -18,16 +18,12 @@ export function CTASection() {
               but we can prepare
             </h2>
             <p className="body-copy mt-5 max-w-lg text-muted-foreground">
-              A short conversation is usually enough to see where your coverage stands today, what a
-              gap would actually cost your household, and which carriers price your situation best.
-              No pressure, no cost.
+              A short conversation is usually enough to see where your coverage stands today, what a gap would actually
+              cost your household, and which carriers price your situation best. No pressure, no cost.
             </p>
           </div>
           <div className="flex flex-col items-start gap-4 lg:items-center">
-            <Link
-              to="/contact"
-              className="btn-gold inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm"
-            >
+            <Link to="/contact" className="btn-gold inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm">
               Get a Free Consultation
               <ArrowRight className="h-4 w-4" />
             </Link>

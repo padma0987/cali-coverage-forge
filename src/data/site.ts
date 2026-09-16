@@ -24,10 +24,10 @@ export const heroCopy = {
 };
 
 export const approachCards = [
- {
+  {
     step: "Step 1",
-    title: "Build Your Plan",
-    body: "Present personalized solutions and a clear plan designed to help you accomplish your goals.",
+    title: "Understand Your Goals",
+    body: "Start with a consultation to understand your needs, priorities, and goals.",
   },
   {
     step: "Step 2",
