@@ -4,8 +4,9 @@ import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import headshotAsset from "@/assets/charlie-headshot.jpg.asset.json";
 import { serviceMenu } from "@/data/services";
 import { site } from "@/data/site";
+import headshot from "@/assets/charlie-headshot.jpg";
 
-const headshot = headshotAsset.url;
+//const headshot = headshotAsset.url;
 
 export function Header() {
   const [megaOpen, setMegaOpen] = useState(false);
@@ -59,7 +60,7 @@ export function Header() {
         <Link to="/" className="flex min-w-0 shrink-0 items-center gap-3">
           <img
             src={headshot}
-            alt="Portrait of Charlie M Richardson, licensed California insurance agent"
+            alt="Portrait of Charlie M Richardson, licensed USA insurance agent"
             width={816}
             height={816}
             className="h-9 w-9 shrink-0 rounded-md object-cover"

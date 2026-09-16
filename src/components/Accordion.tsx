@@ -41,7 +41,7 @@ export function Accordion({ items }: { items: FaqItem[] }) {
               aria-labelledby={`${baseId}-btn-${i}`}
               hidden={!isOpen}
             >
-              <p className="max-w-2xl pb-6 text-sm leading-relaxed text-muted-foreground">
+              <p className="body-copy max-w-2xl pb-6 text-muted-foreground">
                 {item.answer}
               </p>
             </div>

@@ -13,20 +13,20 @@ import { approachCards, heroCopy, site } from "@/data/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Charlie M Richardson | Life & Health Insurance in California" },
+      { title: "Charlie M Richardson | Life & Health Insurance in USA" },
       {
         name: "description",
         content:
-          "Insurance solutions for families, individuals and business owners across California, including life insurance, health insurance, Medicare, retirement and disability protection.",
+          "Insurance solutions for families, individuals and business owners across USA, including life insurance, health insurance, Medicare, retirement and disability protection.",
       },
       {
         property: "og:title",
-        content: "Charlie M Richardson | Life & Health Insurance in California",
+        content: "Charlie M Richardson | Life & Health Insurance in USA",
       },
       {
         property: "og:description",
         content:
-          "Life, health, Medicare, retirement and disability coverage for California families and business owners.",
+          "Life, health, Medicare, retirement and disability coverage for USA families and business owners.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -48,7 +48,7 @@ function Home() {
               </span>
             ))}
           </h1>
-          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+          <p className="body-copy mt-6 max-w-2xl text-muted-foreground">
             {heroCopy.paragraph}
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -83,9 +83,9 @@ function Home() {
           eyebrow="We serve"
           heading={
             <>
-              Services and offers
+              Serving Individuals, Families,
               <br />
-              curated for your need
+             Professionals & Businesses Nationwide 
             </>
           }
           body={heroCopy.paragraph}
@@ -109,13 +109,14 @@ function Home() {
               Approach
             </>
           }
-          body="Every recommendation starts with your numbers, not a product. We explain the mechanics, the costs and the limits of each option, then compare A-rated California carriers so the decision is yours to make with full information."
+          body="Charlie M. Richardson provides insurance, retirement and financial planning across all 50 states, helping clients protect their family, income, businesses, and financial futures through personalized strategies built around their goals."
         />
         <div className="mt-14 space-y-4">
           {approachCards.map((card) => (
             <article key={card.title} className="card-elegant p-7 sm:p-9">
+             <span className="step-label">{card.step}</span>
               <h3 className="text-lg sm:text-xl">{card.title}</h3>
-              <p className="mt-4 max-w-4xl text-sm leading-relaxed text-muted-foreground">
+              <p className="body-copy mt-4 max-w-4xl text-muted-foreground">
                 {card.body}
               </p>
             </article>

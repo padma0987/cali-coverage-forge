@@ -2,34 +2,41 @@ export const site = {
   name: "Charlie M Richardson",
   phone: "+1 714-809-6503",
   phoneHref: "tel:+17148096503",
-  altPhone: "(818) 389-7970",
-  altPhoneHref: "tel:+18183897970",
-  email: "charlie@charlierichardson.com",
-  location: "California",
+  altPhone: "+1 714-809-6503",
+  altPhoneHref: "tel:+17148096503",
+  email: "charlie@charliemrichardson.com",
+  location: "USA",
   description:
     "Charlie Richardson offering insurance for Health, Medicare, Disability, Retirement planning, Employee benefits and Business protection for individuals, families.",
 };
 
 export const trustItems = [
-  { title: "Free", subtitle: "Consultation" },
-  { title: "Regular", subtitle: "Support" },
-  { title: "One on one", subtitle: "Conversation" },
-  { title: "Reliable", subtitle: "Professional help" },
+  { title: "50 States Covered", subtitle: "Covered" },
+  { title: "Multiple", subtitle: "Carriers Compared" },
+  { title: "1 on 1", subtitle: "Consultations" },
+  { title: "Free", subtitle: "Financial Plans" },
 ];
 
 export const heroCopy = {
-  headline: ["Coverage in California.", "Protection for What Matters."],
+  headline: ["Insurance, Tax Mitigation & Retirement Planning in all 50 states"],
   paragraph:
-    "Life insurance is about your family keeping their lifestyle, your kids finishing college, your business staying afloat. Charlie M Richardson Insurance offers Indexed Universal Life (IUL), Term Life, Permanent Life, and complete family protection planning across California — comparing 30+ A-rated carriers to find the right policy at the right price.",
+    "Helping families, individuals, professionals, and business owners protect what they’ve built, explore tax-efficient strategies, prepare for retirement, and build a stronger financial future.",
 };
 
 export const approachCards = [
   {
-    title: "What is Employee Benefits & Group Health Benefits",
-    body: "Group health and employee benefits let a business offer medical, dental, vision, and supplemental coverage to its team through one plan. We help California employers compare carrier networks, contribution structures, and plan tiers so the benefits package fits both the budget and the people it is meant to protect.",
+    step: "Step 1",
+    title: "Understand Your Goals",
+    body: "Start with a consultation to understand your needs, priorities, and goals.",
   },
   {
-    title: "How Indexed Universal Life (IUL) Can Be Helpful",
-    body: "An Indexed Universal Life policy pairs permanent life insurance protection with a cash value component whose crediting is tied to the performance of a market index, subject to caps and floors set by the carrier. It can suit families who want lifetime coverage alongside a longer-term accumulation option. We walk through the illustrations line by line, including costs and limitations.",
+    step: "Step 2",
+    title: "Build Your Plan",
+    body: "Present personalized solutions and a clear plan designed to help you accomplish your goals.",
+  },
+  {
+    step: "Step 3",
+    title: "Review & Execute",
+    body: "Answer any questions, make adjustments if needed, and once you're comfortable with the plan, put it into action.",
   },
 ];

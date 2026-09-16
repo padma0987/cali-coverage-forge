@@ -5,7 +5,8 @@ import { FinalContact } from "@/components/FinalContact";
 import headshotAsset from "@/assets/charlie-headshot.jpg.asset.json";
 import { approachCards, site } from "@/data/site";
 
-const headshot = headshotAsset.url;
+//const headshot = headshotAsset.url;
+import headshot from "@/assets/charlie-headshot.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -14,13 +15,13 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Meet Charlie M Richardson, an independent California insurance advisor helping families and business owners compare life, health, Medicare and retirement coverage.",
+          "Meet Charlie M Richardson, an independent USA insurance advisor helping families and business owners compare life, health, Medicare and retirement coverage.",
       },
       { property: "og:title", content: "About Charlie M Richardson" },
       {
         property: "og:description",
         content:
-          "An independent California insurance advisor for families, individuals and business owners.",
+          "An independent USA insurance advisor for families, individuals and business owners.",
       },
       { property: "og:url", content: "/about" },
     ],
@@ -42,13 +43,13 @@ function About() {
               <br />
               built on your numbers.
             </h1>
-            <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              {site.name} works with individuals, families and business owners across California.
+            <p className="body-copy mt-6 max-w-xl text-muted-foreground">
+              {site.name} works with individuals, families and business owners across USA.
               Because the practice is independent, recommendations begin with what you need rather
               than a single company&rsquo;s product shelf, and quotes are compared across 30+
               A-rated carriers.
             </p>
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
+            <p className="body-copy mt-4 max-w-xl text-muted-foreground">
               The work covers health insurance, Medicare, group and employee benefits, life
               insurance including Indexed Universal Life, retirement income planning, disability
               income protection and business owner coverage.
@@ -78,7 +79,7 @@ function About() {
           {approachCards.map((card) => (
             <article key={card.title} className="card-elegant p-7 sm:p-9">
               <h3 className="text-lg sm:text-xl">{card.title}</h3>
-              <p className="mt-4 max-w-4xl text-sm leading-relaxed text-muted-foreground">
+              <p className="body-copy mt-4 max-w-4xl text-muted-foreground">
                 {card.body}
               </p>
             </article>
