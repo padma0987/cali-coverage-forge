@@ -68,7 +68,7 @@ export function QuoteForm() {
     setIsSubmitting(true);
 
     try {
-      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+      const accessKey = import.meta.env["VITE_WEB3FORMS_ACCESS_KEY"];
 
       if (!accessKey) {
         throw new Error(
